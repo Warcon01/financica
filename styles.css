@@ -1,0 +1,110 @@
+header {
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-family: "Libre Baskerville";
+}
+
+.card-text {
+    font-family: "Fjalla One";
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+  
+.row1,
+.row2 {
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing between inputs */
+    gap: 10px; /* Add space between fields */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.row1 {
+    padding-top: 20px;
+}
+
+.row2 {
+    justify-content: center;
+}
+
+.field {
+    flex: 1; /* Make all fields take equal width */
+}
+  
+.field input {
+    width: 100%; /* Ensure input fields stretch to their container */
+    padding: 8px;
+    border: 2px solid #222121;
+    border-radius: 8px;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
